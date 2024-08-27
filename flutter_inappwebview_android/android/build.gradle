@@ -25,6 +25,13 @@ android {
     namespace 'com.pichillilorenzo.flutter_inappwebview_android'
     compileSdkVersion 34
 
+    publishing {
+      multipleVariants {
+        allVariants()
+        withJavadocJar()
+      }
+    }
+
     defaultConfig {
         minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
